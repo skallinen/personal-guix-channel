@@ -1,11 +1,12 @@
-(use-modules
- (guix packages)
- (guix download)
- (guix git-download)
- (guix build-system font)
- ((guix licenses)
+(define-module (roboto-mono)
+ #:use-module (guix packages)
+ #:use-module (guix download)
+ #:use-module (guix git-download)
+ #:use-module (guix build-system font)
+ #:use-module ((guix licenses)
   #:prefix license:))
 
+(define-public font-google-roboto-mono
 (package
  (name "font-google-roboto-mono")
  (version "26adf5193624f05ba1743797d00bcf0e6bfe624f")
@@ -30,7 +31,4 @@ Like the other members of the Roboto family, the fonts are optimized for readabi
 While the monospaced version is related to its variable width cousin, it doesn&#8217;t hesitate to change forms to better fit the constraints of a monospaced environment. 
 For example, narrow glyphs like &#8216;I&#8217;, &#8216;l&#8217; and &#8216;i&#8217; have added serifs for more even texture while wider glyphs are adjusted for weight. 
 Curved caps like &#8216;C&#8217; and &#8216;O&#8217; take on the straighter sides from Roboto Condensed.")
- (license license:asl2.0))
-
-
-
+ (license license:asl2.0)))
