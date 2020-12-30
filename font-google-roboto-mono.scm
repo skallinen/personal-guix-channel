@@ -1,4 +1,4 @@
-(define-module (roboto-mono)
+(define-module (font-google-roboto-mono)
  #:use-module (guix packages)
  #:use-module (guix download)
  #:use-module (guix git-download)
